@@ -1,19 +1,19 @@
 # Remove-OrphanedMailboxAccounts
 This script removes HealthMailbox or SystemMailbox accounts in MESO container that are lacking a mailbox database attribute.
 
-##Description
+## Description
 This script removes Active Directory objects for HealthMailboxes or SystemMailboxes in the Microsoft Exchange System Objects (MESO) container that do not have a homeMDB attribute set.
 
 Call the script with -WhatIf parameter to check objects first. 
 
-##Inputs
+## Parameters
 ### HealthMailbox
 Remove Boxes that have an empty database attribute  
 
-#### SystemMailbox
+### SystemMailbox
 Remove SystemBoxes that have an empty database attribute
 
-##Outputs
+## Outputs
 Any mailboxes removed or supposed to be removed when using the -WhatIf parameter are written to a log file.
 
 ## Requirements
@@ -21,7 +21,7 @@ This script utilizes the GlobalFunctions PowerShell module. This module needs to
 
 Read more here: http://bit.ly/GlobalFunctions 
 
-##Examples
+## Examples
 ```
 .\Remove-OrphanedMailboxAccounts.ps1 -SystemMailbox -WhatIf
 ```
@@ -36,14 +36,14 @@ Remove HealthMailbox(es) having an empty database attribute
 THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
 RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
 
-##TechNet Gallery
+## TechNet Gallery
 Find the script at TechNet Gallery
 * https://gallery.technet.microsoft.com/Remove-orphaned-HealthMailb-9f33ccbe
 
-##Credits
+## Credits
 Written by: Thomas Stensitzki
 
-Stay connected:
+## Social
 
 * My Blog: http://justcantgetenough.granikos.eu
 * Twitter: https://twitter.com/stensitzki
